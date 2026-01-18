@@ -96,6 +96,7 @@ export default function Home() {
           <div className="flex items-center gap-6">
             <a href="#about" className="text-gray-700 dark:text-gray-300 hover:text-accent transition-colors hidden sm:block">About</a>
             <a href="#projects" className="text-gray-700 dark:text-gray-300 hover:text-accent transition-colors hidden sm:block">Projects</a>
+            <a href="#education" className="text-gray-700 dark:text-gray-300 hover:text-accent transition-colors hidden sm:block">Education</a>
             <a href="#contact" className="text-gray-700 dark:text-gray-300 hover:text-accent transition-colors hidden sm:block">Contact</a>
 
             <motion.button
@@ -436,6 +437,131 @@ export default function Home() {
               <ExternalLink size={16} />
             </motion.a>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Education & Courses Section */}
+      <section id="education" className="py-32 px-6 bg-light dark:bg-dark transition-colors">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-16"
+          >
+            <h2 className="font-display text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
+              Education & <span className="text-accent">Courses</span>
+            </h2>
+            <div className="w-24 h-1 bg-accent mb-8" />
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Education */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h3 className="font-display text-3xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-3">
+                <span className="text-accent">📚</span> Education
+              </h3>
+
+              <div className="space-y-6">
+                <motion.div
+                  whileHover={{ x: 8 }}
+                  className="p-6 bg-white dark:bg-darkLight rounded-xl border-l-4 border-accent shadow-lg"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <h4 className="font-display text-xl font-bold text-gray-900 dark:text-white">
+                      Diploma in Computer Science & Technology
+                    </h4>
+                    <span className="text-accent font-mono text-sm whitespace-nowrap ml-4">
+                      2025 - Present
+                    </span>
+                  </div>
+                  <p className="text-darkGray dark:text-lightGray">
+                    Saic Institute of Management and Technology (SIMT)
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ x: 8 }}
+                  className="p-6 bg-white dark:bg-darkLight rounded-xl border-l-4 border-accent/50 shadow-lg"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <h4 className="font-display text-xl font-bold text-gray-900 dark:text-white">
+                      Masters in Islamic Studies
+                    </h4>
+                    <span className="text-darkGray dark:text-lightGray font-mono text-sm whitespace-nowrap ml-4">
+                      2021
+                    </span>
+                  </div>
+                  <p className="text-darkGray dark:text-lightGray">
+                    Darul Uloom Moinul Islam - Hathazari
+                  </p>
+                  <p className="text-sm text-darkGray dark:text-lightGray mt-1">
+                    Dawra Hadith
+                  </p>
+                </motion.div>
+              </div>
+            </motion.div>
+
+            {/* Courses */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h3 className="font-display text-3xl font-bold mb-8 text-gray-900 dark:text-white flex items-center gap-3">
+                <span className="text-accent">🎓</span> Courses
+              </h3>
+
+              <div className="space-y-6">
+                <motion.div
+                  whileHover={{ x: 8 }}
+                  className="p-6 bg-white dark:bg-darkLight rounded-xl border-l-4 border-accent shadow-lg"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <h4 className="font-display text-xl font-bold text-gray-900 dark:text-white">
+                      Reactive Accelerator
+                    </h4>
+                    <span className="text-accent font-mono text-sm whitespace-nowrap ml-4">
+                      2024
+                    </span>
+                  </div>
+                  <p className="text-darkGray dark:text-lightGray mb-2">
+                    with Sumit Saha
+                  </p>
+                  <p className="text-sm text-darkGray dark:text-lightGray">
+                    Learn with Sumit • Jan 2024 - Jun 2024
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  whileHover={{ x: 8 }}
+                  className="p-6 bg-white dark:bg-darkLight rounded-xl border-l-4 border-accent/50 shadow-lg"
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <h4 className="font-display text-xl font-bold text-gray-900 dark:text-white">
+                      Complete Web Development
+                    </h4>
+                    <span className="text-darkGray dark:text-lightGray font-mono text-sm whitespace-nowrap ml-4">
+                      2022
+                    </span>
+                  </div>
+                  <p className="text-darkGray dark:text-lightGray mb-2">
+                    with Jhankar Mahbub
+                  </p>
+                  <p className="text-sm text-darkGray dark:text-lightGray">
+                    Programming Hero • Jul 2022 - Dec 2022
+                  </p>
+                </motion.div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 

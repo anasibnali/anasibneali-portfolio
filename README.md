@@ -5,10 +5,13 @@ A modern, responsive portfolio website showcasing full-stack development project
 ## Features
 
 - 🎨 Clean, modern design with smooth animations
+- 🌓 Dark/Light theme toggle with persistent preferences
 - 📱 Fully responsive across all devices
 - ⚡ Built with Next.js 14 and TypeScript
 - 🎭 Framer Motion for fluid animations
 - 🎯 Optimized for performance and SEO
+- 📚 Education and Courses section
+- 💼 Project showcase with detailed descriptions
 - 🌐 Easy to customize and deploy
 
 ## Tech Stack
@@ -81,9 +84,16 @@ Edit `src/app/page.tsx` to update:
 Modify the color scheme in `tailwind.config.js`:
 ```js
 colors: {
-  cream: '#fafaf7',
-  charcoal: '#1a1a1a',
-  accent: '#0ea5e9', // Change this for different accent color
+  // Dark theme
+  dark: '#0a0a0a',
+  darkLight: '#1a1a1a',
+  // Light theme
+  light: '#fafaf7',
+  lightDark: '#f5f5f2',
+  // Accent color (currently cyan/teal)
+  accent: '#06b6d4', // Change this for different accent color
+  accentDark: '#0891b2',
+  accentLight: '#22d3ee',
 }
 ```
 
